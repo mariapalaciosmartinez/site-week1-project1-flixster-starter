@@ -1,4 +1,4 @@
-let fakeMoviesAPI = {
+{
     "dates": {
         "maximum": "2023-06-05",
         "minimum": "2023-04-18"
@@ -72,5 +72,3 @@ let fakeMoviesAPI = {
     "total_pages": 98,
     "total_results": 1951
 }
-
-console.log(fakeMoviesAPI.results[0])

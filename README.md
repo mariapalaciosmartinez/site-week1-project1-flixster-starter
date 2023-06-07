@@ -2,7 +2,7 @@
 
 ## Week 1 Assignment: Flixster
 
-Submitted by: **NAME**
+Submitted by: **Maria Fernanda Palacios Martinez**
 
 Estimated time spent: **#** hours spent in total
 
