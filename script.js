@@ -72,5 +72,32 @@ let fakeMoviesAPI = {
     "total_pages": 98,
     "total_results": 1951
 }
+let firstMovie = fakeMoviesAPI.results[0];
+console.log(firstMovie)
 
-console.log(fakeMoviesAPI.results[0])
+function generateCards(movieObject) {
+    //create star
+    let star = document.createElement('span');
+    star.classList.add('star')
+    let starContent = document.createTextNode('⭐️');
+    star.appendChild(starContent);
+
+    //get rating
+    let rating = document.createElement('span');
+    let ratingContent = document.createTextNode(movieObject.vote_average);
+    rating.classList.add('rating')
+    rating.appendChild(ratingContent)
+
+    //create average container
+    let averageContainer = document.createElement('div');
+    averageContainer.classList.add('average');
+    averageContainer.appendChild(star);
+    averageContainer.appendChild(rating);
+    document.body.appendChild(averageContainer);
+
+    let image = document.createElement('img');
+    image.src= "https://image.tmdb.org/t/p/w342" + movieObject.poster_path
+    document.body.insertBefore(image, averageContainer)
+}
+
+generateCards(firstMovie);
