@@ -72,8 +72,6 @@ let fakeMoviesAPI = {
     "total_pages": 98,
     "total_results": 1951
 }
-let firstMovie = fakeMoviesAPI.results[0];
-console.log(firstMovie)
 
 function generateCards(movieObject) {
     //create star
@@ -114,4 +112,7 @@ function generateCards(movieObject) {
     document.body.appendChild(movie)
 }
 
-generateCards(firstMovie);
+for (let i = 0; i < 3; i++) {
+    console.log(fakeMoviesAPI.results[i]);
+    generateCards(fakeMoviesAPI.results[i]);
+}
