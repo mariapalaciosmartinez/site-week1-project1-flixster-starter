@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    color: #949373;
+}
+body {
+    background-color: rgb(101, 24, 21);
+}
+.star {
+    margin: 3px;
+}
+.average {
+    font-weight: normal;
+    color: #949373;
+}
+.name {
+    margin : 1px;
+    color: #949373;
+    font-weight: bold;
+    text-align: center;
+}
+img {
+    margin : 70px;
+    width: 200px;
+    height: auto;
+    border: 20px;
+    border-radius: 20%;
+    border-style: solid;
+    border-color: #080b29;
+}
+.movie {
+    margin: 100px;
+    display:inline-block;
+}
+button {
+    position:absolute;
+    left: 50%;
+    border-bottom: 50px;
+}
